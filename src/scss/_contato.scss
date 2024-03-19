@@ -1,0 +1,54 @@
+.container {
+    padding-bottom: 100px;
+}
+
+.title {
+    font-family: cursive;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    font-size: 32px;
+    color: black;
+}
+
+form {
+    margin: 25px;
+    padding-left: 400px;
+    width: 1500px;
+}
+
+.groupButton {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 399px;
+    gap: 15px;
+}
+
+.delete {
+    background-color: rgb(119, 27, 14);
+    border: none;
+}
+
+.delete:hover {
+    background-color: rgb(160, 55, 41);
+}
+
+.post {
+    background-color: #619c5f;
+    border: none;
+}
+
+.post:hover {
+    background-color: #82b880;
+}
+
+.conteudo {
+    color: black;
+    padding-top: 35px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: "Edu SA Beginner", cursive;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: justify;
+}

@@ -1,0 +1,26 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding-top: 20px;
+    padding-bottom: 100px;
+}
+
+.button {
+    background-color: #98d196;
+    border: #98d196;
+    width: 150px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: monospace;
+}
+
+.img {
+    border-radius: 5px;
+    padding-bottom: 15px;
+}
+
+.button:hover{
+    background-color: #dbf3da;
+    color: black;
+}

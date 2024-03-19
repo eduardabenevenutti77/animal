@@ -1,0 +1,23 @@
+/* Estilos da navbar */
+.navbar {
+    background-color: #619c5f; 
+    color: #fff; 
+}
+
+.logo {
+    margin-left: 50px;
+}
+
+.navbar-text {
+    padding: 10px 20px; 
+    margin-right: 10px; 
+    font-size: 18px; 
+    text-decoration: none; 
+    cursor: pointer; 
+    font-family: cursive;
+}
+  
+.navbar-text:hover {
+    background-color: #619c5f;
+}
+  
