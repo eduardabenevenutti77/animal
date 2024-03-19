@@ -12,56 +12,37 @@
 //   }
   
 
-import Card from 'react-bootstrap/Card';
+import Accordion from 'react-bootstrap/Accordion';
 
 export default function Sobre() {
   return (
     <div className='grid'>
-    <Card>
-      <Card.Header>Quote</Card.Header>
-      <Card.Body>
-        <blockquote className="blockquote mb-0">
-          <p>
-            {' '}
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-            posuere erat a ante.{' '}
-          </p>
-          <footer className="blockquote-footer">
-            Someone famous in <cite title="Source Title">Source Title</cite>
-          </footer>
-        </blockquote>
-      </Card.Body>
-    </Card>
-    <Card>
-      <Card.Header>Quote</Card.Header>
-      <Card.Body>
-        <blockquote className="blockquote mb-0">
-          <p>
-            {' '}
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-            posuere erat a ante.{' '}
-          </p>
-          <footer className="blockquote-footer">
-            Someone famous in <cite title="Source Title">Source Title</cite>
-          </footer>
-        </blockquote>
-      </Card.Body>
-    </Card>
-    <Card>
-      <Card.Header>Quote</Card.Header>
-      <Card.Body>
-        <blockquote className="blockquote mb-0">
-          <p>
-            {' '}
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-            posuere erat a ante.{' '}
-          </p>
-          <footer className="blockquote-footer">
-            Someone famous in <cite title="Source Title">Source Title</cite>
-          </footer>
-        </blockquote>
-      </Card.Body>
-    </Card>
+    <Accordion defaultActiveKey="0" flush>
+      <Accordion.Item eventKey="0">
+        <Accordion.Header>Accordion Item #1</Accordion.Header>
+        <Accordion.Body>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="1">
+        <Accordion.Header>Accordion Item #2</Accordion.Header>
+        <Accordion.Body>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </Accordion.Body>
+      </Accordion.Item>
+    </Accordion>
     </div>
   );
 }
