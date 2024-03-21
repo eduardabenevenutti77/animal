@@ -1,14 +1,3 @@
-// export default function Contato() {
-//     return (
-//       <div>
-//         <h1 className="title">Contato</h1>
-//         <p className="conteudo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi animi porro aperiam impedit corrupti minus quos veritatis suscipit exercitationem quo hic temporibus, libero recusandae id perspiciatis quisquam, sapiente nostrum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi ipsum porro earum voluptates, est cumque deserunt, ipsam exercitationem provident eveniet ea neque quas autem aperiam perferendis eaque quam, reprehenderit harum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit veritatis dignissimos natus atque possimus soluta quo quia accusantium laborum ipsam! Minima porro eligendi maiores impedit sed harum, nulla aspernatur ut!</p>
-//         <p className="conteudo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi animi porro aperiam impedit corrupti minus quos veritatis suscipit exercitationem quo hic temporibus, libero recusandae id perspiciatis quisquam, sapiente nostrum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi ipsum porro earum voluptates, est cumque deserunt, ipsam exercitationem provident eveniet ea neque quas autem aperiam perferendis eaque quam, reprehenderit harum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit veritatis dignissimos natus atque possimus soluta quo quia accusantium laborum ipsam! Minima porro eligendi maiores impedit sed harum, nulla aspernatur ut!</p>
-//         <p className="conteudo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eligendi animi porro aperiam impedit corrupti minus quos veritatis suscipit exercitationem quo hic temporibus, libero recusandae id perspiciatis quisquam, sapiente nostrum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi ipsum porro earum voluptates, est cumque deserunt, ipsam exercitationem provident eveniet ea neque quas autem aperiam perferendis eaque quam, reprehenderit harum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit veritatis dignissimos natus atque possimus soluta quo quia accusantium laborum ipsam! Minima porro eligendi maiores impedit sed harum, nulla aspernatur ut!</p>
-//       </div>
-//     );
-//   }  
-
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
