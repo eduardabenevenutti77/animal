@@ -7,7 +7,7 @@ const Album = () => {
             <Card>
                 <Card.Body>
                         <Card.Img className="img" variant="top" src="https://blog.cobasi.com.br/wp-content/uploads/2021/01/mini-coelho-capa.png" />  
-                        <Card.Title>This is a bunny 🐰</Card.Title>
+                        <Card.Title>This is a bunny 🐰🤍</Card.Title>
                         <Card.Text>Esta é uma breve descrição do álbum.</Card.Text>
                         <Button className="button">Abrir</Button>
                 </Card.Body>
@@ -15,7 +15,7 @@ const Album = () => {
             <Card>
                 <Card.Body>
                     <Card.Img className="img" variant="top" src="https://blog.cobasi.com.br/wp-content/uploads/2021/01/mini-coelho-capa.png" />  
-                    <Card.Title>This is a bunny 🐰</Card.Title>
+                    <Card.Title>This is a bunny 🐰🤍</Card.Title>
                     <Card.Text>Esta é uma breve descrição do álbum.</Card.Text>
                     <Button className="button">Abrir</Button>
                 </Card.Body>
@@ -23,7 +23,7 @@ const Album = () => {
             <Card>
                 <Card.Body>    
                     <Card.Img className="img" variant="top" src="https://blog.cobasi.com.br/wp-content/uploads/2021/01/mini-coelho-capa.png" />  
-                    <Card.Title>This is a bunny 🐰</Card.Title>
+                    <Card.Title>This is a bunny 🐰🤍</Card.Title>
                     <Card.Text>Esta é uma breve descrição do álbum.</Card.Text>
                     <Button className="button">Abrir</Button>
                 </Card.Body>
@@ -31,7 +31,7 @@ const Album = () => {
             <Card>
                 <Card.Body>   
                     <Card.Img className="img" variant="top" src="https://blog.cobasi.com.br/wp-content/uploads/2021/01/mini-coelho-capa.png" />  
-                    <Card.Title>This is a bunny 🐰</Card.Title>
+                    <Card.Title>This is a bunny 🐰🤍</Card.Title>
                     <Card.Text>Esta é uma breve descrição do álbum.</Card.Text>
                     <Button className="button">Abrir</Button>
                 </Card.Body>
@@ -39,7 +39,7 @@ const Album = () => {
             <Card>
                 <Card.Body>    
                 <   Card.Img className="img" variant="top" src="https://blog.cobasi.com.br/wp-content/uploads/2021/01/mini-coelho-capa.png" />  
-                    <Card.Title>This is a bunny 🐰</Card.Title>
+                    <Card.Title>This is a bunny 🐰🤍</Card.Title>
                     <Card.Text>Esta é uma breve descrição do álbum.</Card.Text>
                     <Button className="button">Abrir</Button>
                 </Card.Body>
@@ -47,7 +47,7 @@ const Album = () => {
             <Card>
                 <Card.Body>    
                     <Card.Img className="img" variant="top" src="https://blog.cobasi.com.br/wp-content/uploads/2021/01/mini-coelho-capa.png" />  
-                    <Card.Title>This is a bunny 🐰</Card.Title>
+                    <Card.Title>This is a bunny 🐰🤍</Card.Title>
                     <Card.Text>Esta é uma breve descrição do álbum.</Card.Text>
                     <Button className="button">Abrir</Button>
                 </Card.Body>
@@ -55,7 +55,7 @@ const Album = () => {
             <Card>
                 <Card.Body>   
                     <Card.Img className="img" variant="top" src="https://blog.cobasi.com.br/wp-content/uploads/2021/01/mini-coelho-capa.png" />  
-                    <Card.Title>This is a bunny 🐰</Card.Title>
+                    <Card.Title>This is a bunny 🐰🤍</Card.Title>
                     <Card.Text>Esta é uma breve descrição do álbum.</Card.Text>
                     <Button className="button">Abrir</Button>
                 </Card.Body>
@@ -63,7 +63,7 @@ const Album = () => {
             <Card>
                 <Card.Body>   
                     <Card.Img className="img" variant="top" src="https://blog.cobasi.com.br/wp-content/uploads/2021/01/mini-coelho-capa.png" />  
-                    <Card.Title>This is a bunny 🐰</Card.Title>
+                    <Card.Title>This is a bunny 🐰🤍</Card.Title>
                     <Card.Text>Esta é uma breve descrição do álbum.</Card.Text>
                     <Button className="button">Abrir</Button>
                 </Card.Body>
@@ -71,7 +71,7 @@ const Album = () => {
             <Card>
                 <Card.Body>  
                     <Card.Img className="img" variant="top" src="https://blog.cobasi.com.br/wp-content/uploads/2021/01/mini-coelho-capa.png" />  
-                    <Card.Title>This is a bunny 🐰</Card.Title>
+                    <Card.Title>This is a bunny 🐰🤍</Card.Title>
                     <Card.Text>Esta é uma breve descrição do álbum.</Card.Text>
                     <Button className="button">Abrir</Button>
                 </Card.Body>

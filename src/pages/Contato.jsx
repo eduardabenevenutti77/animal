@@ -55,14 +55,14 @@ export default function Contato() {
         <Form.Check type="checkbox" label="Check me out" />
       </Form.Group>
 
-    <div className='groupButton'>
+    {/* <div className='groupButton'>
       <Button className='delete' type="submit">
         Submit
       </Button>
       <Button className='post' type="submit">
         Submit
       </Button>
-    </div>
+    </div> */}
       </fieldset>
     </Form>
   );

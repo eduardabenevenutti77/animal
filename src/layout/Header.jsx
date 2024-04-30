@@ -9,14 +9,14 @@ export default function Header() {
           <Navbar.Text as={Link} to="/">
             Inicial
           </Navbar.Text>
-          <Navbar.Text as={Link} to="/sobre">
-            Sobre
+          <Navbar.Text as={Link} to="/album">
+            Album
           </Navbar.Text>
           <Navbar.Text as={Link} to="/contato">
             Contato
           </Navbar.Text>
-          <Navbar.Text as={Link} to="/album">
-            Album
+          <Navbar.Text as={Link} to="/sobre">
+            Sobre
           </Navbar.Text>
     </Navbar>
   );
