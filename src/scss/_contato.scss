@@ -18,37 +18,31 @@
 }
 
 form {
-    margin: 25px;
-    margin-left: 200px;
+    margin-top: 55px;
+    margin-left: 500px;
     margin-bottom: 150px;
     width: 900px;
 }
-
 .groupButton {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin-left: 399px;
     gap: 15px;
 }
-
 .delete {
     background-color: rgb(119, 27, 14);
     border: none;
 }
-
 .delete:hover {
     background-color: rgb(160, 55, 41);
 }
-
 .post {
     background-color: #619c5f;
     border: none;
 }
-
 .post:hover {
     background-color: #82b880;
 }
-
 .conteudo {
     color: black;
     padding-top: 35px;

@@ -1,12 +1,26 @@
+import React from "react";
+import { Card, Button, Container } from "react-bootstrap";
 export default function Sobre() {
     return (
       <div>
-        <h1 className="title">Sobre</h1>
-        {/* <p className="conteudo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi fuga nesciunt consequatur dicta sapiente quam et temporibus fugiat soluta commodi vero, eaque recusandae odit in amet adipisci, consectetur voluptatum dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet hic blanditiis tempora error, obcaecati totam quibusdam in maxime, assumenda, eaque dolore repudiandae molestiae. Nesciunt voluptates officia sit culpa harum quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aut voluptatem facilis quo quia amet deleniti ea illum quis nemo cumque sit, quas autem ex aliquam ipsa laborum repudiandae consequuntur.</p> */}
-        {/* <p className="conteudo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi fuga nesciunt consequatur dicta sapiente quam et temporibus fugiat soluta commodi vero, eaque recusandae odit in amet adipisci, consectetur voluptatum dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet hic blanditiis tempora error, obcaecati totam quibusdam in maxime, assumenda, eaque dolore repudiandae molestiae. Nesciunt voluptates officia sit culpa harum quis.</p> */}
-        {/* <p className="conteudo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi fuga nesciunt consequatur dicta sapiente quam et temporibus fugiat soluta commodi vero, eaque recusandae odit in amet adipisci, consectetur voluptatum dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet hic blanditiis tempora error, obcaecati totam quibusdam in maxime, assumenda, eaque dolore repudiandae molestiae. Nesciunt voluptates officia sit culpa harum quis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium sed, sint cum officiis temporibus quod esse aliquid voluptatum mollitia dolores nihil quo beatae. Ipsa eaque hic tempora provident at deleniti?</p> */}
-        {/* <p className="conteudo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi fuga nesciunt consequatur dicta sapiente quam et temporibus fugiat soluta commodi vero, eaque recusandae odit in amet adipisci, consectetur voluptatum dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet hic blanditiis tempora error, obcaecati totam quibusdam in maxime, assumenda, eaque dolore repudiandae molestiae. Nesciunt voluptates officia sit culpa harum quis.</p> */}
-        {/* <p className="conteudo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi fuga nesciunt consequatur dicta sapiente quam et temporibus fugiat soluta commodi vero, eaque recusandae odit in amet adipisci, consectetur voluptatum dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet hic blanditiis tempora error, obcaecati totam quibusdam in maxime, assumenda, eaque dolore repudiandae molestiae. Nesciunt voluptates officia sit culpa harum quis.</p> */}
+        <p className="title">Teconologias Utilizadas: </p>
+      <Container className="grid">
+            <Card>
+                <Card.Body>    
+                    <Card.Img className="img" variant="top" src="https://www.techforretail.com/wp-content/uploads/2023/05/logo_vercel.jpg.webp" />  
+                </Card.Body>
+            </Card>
+            <Card>
+                <Card.Body>    
+                    <Card.Img className="img" variant="top" src="https://pbs.twimg.com/profile_images/1372304699601285121/5yBS6_3F_400x400.jpg" />  
+                </Card.Body>
+            </Card>
+            <Card>
+                <Card.Body>    
+                    <Card.Img className="img" variant="top" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png" />  
+                </Card.Body>
+            </Card>
+        </Container>
       </div>
     );
 }

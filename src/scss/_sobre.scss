@@ -1,30 +1,10 @@
-.title {
-    font-family: cursive;
-    text-align: center;
-    padding-top: 25px;
-    font-size: 32px;
-    color: black;
-}
-
 .grid {
-    // display: grid;
-    // grid-template-rows: repeat(3, 1fr);
-    // gap: 10px;
-    padding-left: 100px;
-    padding-right: 100px;
-    margin-left: 150px;
-    padding-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding-top: 25px;
     padding-bottom: 100px;
 }
-
-
-.conteudo {
-    color: black;
-    padding-top: 35px;
-    padding-left: 40px;
-    padding-right: 40px;
-    font-family: "Edu SA Beginner", cursive;
-    font-size: 20px;
-    font-weight: 400;
-    text-align: justify;
+.img {
+    width: 80px;
 }
