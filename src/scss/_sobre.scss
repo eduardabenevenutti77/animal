@@ -1,3 +1,11 @@
+.title {
+    font-family: cursive;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    font-size: 32px;
+    color: black;
+}
 .grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -7,4 +15,12 @@
 }
 .img {
     width: 80px;
+}
+@media (min-width: 768px) {
+    .title {
+        margin-bottom: 10px;
+    }
+    .grid {
+        padding-top: 15px;
+    }
 }

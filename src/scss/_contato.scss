@@ -1,13 +1,11 @@
 .container {
     padding-bottom: 100px;
 }
-
 * {
     margin: 0;
     padding: 0;
     border: 0;
 }
-
 .title {
     font-family: cursive;
     text-align: center;
@@ -16,7 +14,6 @@
     font-size: 32px;
     color: black;
 }
-
 form {
     margin-top: 55px;
     margin-left: 550px;
@@ -52,4 +49,13 @@ form {
     font-size: 20px;
     font-weight: 400;
     text-align: justify;
+}
+@media (min-width: 768px) {
+    .title {
+        margin-top: 0px;
+    }
+    form {
+        margin-top: 5px;
+        margin-left: 150px;
+    }
 }
