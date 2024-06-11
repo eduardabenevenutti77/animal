@@ -3,7 +3,7 @@ import { Card, Button, Container } from "react-bootstrap";
 export default function Sobre() {
     return (
       <div>
-      <p className="title">Teconologias Utilizadas: </p>
+      <p className="title">Tecnologias Utilizadas: </p>
       <Container className="grid">
             <Card>
                 <Card.Body>    
