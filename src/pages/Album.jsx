@@ -127,14 +127,16 @@ const AnimalCard = () => {
   }
 
   return (
-    <Card>
-      <Card.Body>
-        <Card.Img className="img" variant="top" src={imageUrl || "https://via.placeholder.com/150"} />
-        <Card.Title>{animal ? animal.name : 'Nome do Animal'}</Card.Title>
-        <Card.Text>{animal ? animal.description : 'Descrição do animal não disponível.'}</Card.Text>
-        <Button className="button">Abrir</Button>
-      </Card.Body>
-    </Card>
+    <Container className="grid">
+        <Card>
+        <Card.Body>
+            <Card.Img className="img" variant="top" src={imageUrl || "https://via.placeholder.com/150"} />
+            <Card.Title>{animal ? animal.name : 'Nome do Animal'}</Card.Title>
+            <Card.Text>{animal ? animal.description : 'Descrição do animal não disponível.'}</Card.Text>
+            <Button className="button">Abrir</Button>
+        </Card.Body>
+        </Card>
+    </Container>
   );
 };
 
