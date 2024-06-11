@@ -87,28 +87,51 @@ import axios from 'axios';
 import { Card, Button } from 'react-bootstrap';
 
 const AnimalCard = () => {
+  const [animal, setAnimal] = useState(null);
   const [imageUrl, setImageUrl] = useState('');
+  const [error, setError] = useState('');
 
   useEffect(() => {
-    // Função para buscar a imagem da Dog API
-    const fetchDogImage = async () => {
+    const fetchAnimalData = async () => {
       try {
-        const response = await axios.get('https://dog.ceo/api/breeds/image/random');
-        setImageUrl(response.data.message);
+        // Primeira requisição: obter o token de acesso
+        const authResponse = await axios.post('https://api.petfinder.com/v2/oauth2/token', {
+          grant_type: 'client_credentials',
+          client_id: 'YOUR_CLIENT_ID',
+          client_secret: 'YOUR_CLIENT_SECRET'
+        });
+
+        const token = authResponse.data.access_token;
+        
+        // Segunda requisição: obter dados do animal
+        const animalResponse = await axios.get('https://api.petfinder.com/v2/animals?limit=1', {
+          headers: {
+            Authorization: `Bearer ${token}`
+          }
+        });
+
+        const animalData = animalResponse.data.animals[0];
+        setAnimal(animalData);
+        setImageUrl(animalData.photos.length > 0 ? animalData.photos[0].medium : '');
       } catch (error) {
-        console.error('Erro ao buscar a imagem do cachorro:', error);
+        console.error('Erro ao buscar dados do animal:', error);
+        setError('Erro ao buscar dados do animal.');
       }
     };
 
-    fetchDogImage();
+    fetchAnimalData();
   }, []);
+
+  if (error) {
+    return <div>{error}</div>;
+  }
 
   return (
     <Card>
       <Card.Body>
-        <Card.Img className="img" variant="top" src={imageUrl || "https://blog.cobasi.com.br/wp-content/uploads/2021/01/mini-coelho-capa.png"} />
-        <Card.Title>This is a bunny 🐰🤍</Card.Title>
-        <Card.Text>Esta é uma breve descrição do álbum.</Card.Text>
+        <Card.Img className="img" variant="top" src={imageUrl || "https://via.placeholder.com/150"} />
+        <Card.Title>{animal ? animal.name : 'Nome do Animal'}</Card.Title>
+        <Card.Text>{animal ? animal.description : 'Descrição do animal não disponível.'}</Card.Text>
         <Button className="button">Abrir</Button>
       </Card.Body>
     </Card>
