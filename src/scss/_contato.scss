@@ -1,61 +1,83 @@
-.container {
-    padding-bottom: 100px;
-}
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-}
-.title {
-    font-family: cursive;
+$form-background: #f9f9f9;
+$primary-color: #619c5f;
+$secondary-color: #20531f;
+$border-radius: 7px;
+$padding: 20px;
+
+.form-container {
+  max-width: 850px;
+  margin: 40px auto 0;
+  background-color: $form-background;
+  padding: $padding;
+  border-radius: $border-radius;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  transition: box-shadow 0.3s ease;
+  margin-bottom: 100px;
+
+  .title {
+    font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 50px;
-    font-size: 32px;
-    color: black;
+    font-size: 24px;
+    color: $secondary-color;
+    margin-bottom: 20px;
+  }
 }
-form {
-    margin-top: 55px;
-    margin-left: 500px;
-    margin-bottom: 150px;
-    width: 900px;
+
+.form-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: $secondary-color;
 }
-.groupButton {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin-left: 399px;
-    gap: 15px;
+
+.form-input {
+  width: 350px;
+  padding: 12px;
+  border: 2px solid $secondary-color;
+  border-radius: $border-radius;
+  box-sizing: border-box;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+
+  &:focus {
+    border-color: $primary-color;
+  }
+
+  margin: 0 auto;
+  display: block;
+  margin-left: 15px;
+  margin-bottom: 20px; 
 }
-.delete {
-    background-color: rgb(119, 27, 14);
-    border: none;
+
+.form-button {
+  width: 50%;
+  padding: 12px;
+  background-color: $primary-color;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 200px;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
 }
-.delete:hover {
-    background-color: rgb(160, 55, 41);
+
+.form-error {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
 }
-.post {
-    background-color: #619c5f;
-    border: none;
-}
-.post:hover {
-    background-color: #82b880;
-}
-.conteudo {
-    color: black;
-    padding-top: 35px;
-    padding-left: 30px;
-    padding-right: 30px;
-    font-family: "Edu SA Beginner", cursive;
-    font-size: 20px;
-    font-weight: 400;
-    text-align: justify;
-}
-@media (min-width: 768px) {
-    .title {
-        margin-top: 0px;
-    }
-    form {
-        margin-top: 5px;
-        // margin-left: 150px;
-    }
+
+.form-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

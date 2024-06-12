@@ -84,7 +84,7 @@
 
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Card, Button } from 'react-bootstrap';
+import { Card, Button, Container } from 'react-bootstrap';
 
 const AnimalCard = () => {
   const [animal, setAnimal] = useState(null);
