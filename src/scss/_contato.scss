@@ -24,6 +24,10 @@ $padding: 20px;
   }
 }
 
+.dark-theme {
+    background-color: #bbb;
+}
+
 .form-label {
   display: block;
   margin-bottom: 8px;
@@ -81,3 +85,23 @@ $padding: 20px;
   justify-content: center;
   align-items: center;
 }
+
+.theme-button {
+    width: 50%;
+    padding: 12px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 20px;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    margin-left: 200px;
+  
+    &:hover {
+      background-color: #bbb;
+    }
+  }
+  

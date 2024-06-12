@@ -10,6 +10,7 @@ export default function Contato() {
   const [neighborhood, setNeighborhood] = useState('');
   const [city, setCity] = useState('');
   const [error, setError] = useState('');
+  const [theme, setTheme] = useState('light');
 
   const handleCepChange = async (e) => {
     const newCep = e.target.value;
@@ -57,8 +58,12 @@ export default function Contato() {
     console.log({ name, email, phone, cep, street, neighborhood, city });
   };
 
+  const toggleTheme = () => {
+    setTheme(theme === 'light' ? 'dark' : 'light');
+  };
+
   return (
-    <Container className="form-container">
+    <Container className={`form-container ${theme}`}>
       <p className='title'>Cadastre as suas informações ao nosso sistema!</p>
       <form onSubmit={handleSubmit}>
         <div className="form-row">
@@ -76,7 +81,6 @@ export default function Contato() {
             Telefone:
             <input type="text" value={phone} onChange={(e) => setPhone(e.target.value)} className="form-input" />
           </label>
-          {/* <div style={Gap}></div> */}
           <label className="form-label">
             CEP:
             <input type="text" value={cep} onChange={handleCepChange} className="form-input" />
@@ -100,6 +104,7 @@ export default function Contato() {
           </label>
         </div>
         <button type="submit" className="form-button">Compartilhar Dados</button>
+        <button type="button" onClick={toggleTheme} className="theme-button">Alterar Tema ☀</button>
       </form>
     </Container>
   );

@@ -4,6 +4,7 @@ import Sobre from "../pages/Sobre";
 import Contato from "../pages/Contato";
 import Body from "../layout/Body";
 import Album from "../pages/Album";
+// import Theme from '../pages/Theme';
 
 export default function AppRoutes() {
   return (
@@ -18,6 +19,7 @@ export default function AppRoutes() {
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/album" element={<Album/>} />
           <Route path="/contato" element={<Contato />} />
+          {/* <Route path="/theme" element={<Theme/>}></Route> */}
         </Route>
       </Routes>
     </BrowserRouter>
