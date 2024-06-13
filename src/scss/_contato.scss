@@ -1,3 +1,5 @@
+/* Contato.css */
+
 $form-background: #f9f9f9;
 $primary-color: #619c5f;
 $secondary-color: #20531f;
@@ -5,7 +7,7 @@ $border-radius: 7px;
 $padding: 20px;
 
 .form-container {
-  max-width: 850px;
+  max-width: 950px;
   margin: 40px auto 0;
   background-color: $form-background;
   padding: $padding;
@@ -15,6 +17,25 @@ $padding: 20px;
   transition: box-shadow 0.3s ease;
   margin-bottom: 100px;
 
+  &.dark-theme {
+    background-color: #d7f1d6;
+    color: white;
+
+    .form-input, .form-button, .theme-button {
+      background-color: #444;
+      border-color: #555;
+      color: white;
+
+      &:hover {
+        background-color: #619c5f;
+      }
+    }
+
+    .form-error {
+      color: red;
+    }
+  }
+
   .title {
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
@@ -22,10 +43,6 @@ $padding: 20px;
     color: $secondary-color;
     margin-bottom: 20px;
   }
-}
-
-.dark-theme {
-    background-color: #bbb;
 }
 
 .form-label {
@@ -66,7 +83,7 @@ $padding: 20px;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-left: 200px;
+  margin-left: 250px;
 
   &:hover {
     background-color: darken($primary-color, 10%);
@@ -87,21 +104,20 @@ $padding: 20px;
 }
 
 .theme-button {
-    width: 50%;
-    padding: 12px;
-    background-color: #ccc;
-    border: none;
-    border-radius: 20px;
-    color: black;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 20px;
-    margin-left: 200px;
-  
-    &:hover {
-      background-color: #bbb;
-    }
+  width: 50%;
+  padding: 12px;
+  background-color: #ccc;
+  border: none;
+  border-radius: 20px;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  margin-left: 250px;
+
+  &:hover {
+    background-color: #bbb;
   }
-  
+}

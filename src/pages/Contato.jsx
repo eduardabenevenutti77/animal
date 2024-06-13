@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Container } from 'react-bootstrap';
+import { Container, Alert } from 'react-bootstrap';
 import InputMask from 'react-input-mask';
+// import './Contato.css'; // Certifique-se de importar seu arquivo CSS
 
 export default function Contato() {
   const [name, setName] = useState('');
@@ -11,6 +12,7 @@ export default function Contato() {
   const [neighborhood, setNeighborhood] = useState('');
   const [city, setCity] = useState('');
   const [error, setError] = useState('');
+  const [showAlert, setShowAlert] = useState(false);
   const [theme, setTheme] = useState('light');
 
   const handleCepChange = async (e) => {
@@ -49,14 +51,7 @@ export default function Contato() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(`Nome cadastrado: ${name}`);
-    alert(`Email cadastrado: ${email}`);
-    alert(`Telefone cadastrado: ${phone}`);
-    alert(`CEP cadastrado: ${cep}`);
-    alert(`Rua cadastrada: ${street}`);
-    alert(`Bairro cadastrado: ${neighborhood}`);
-    alert(`Cidade cadastrada: ${city}`);
-    console.log({ name, email, phone, cep, street, neighborhood, city });
+    setShowAlert(true);
   };
 
   const toggleTheme = () => {
@@ -64,7 +59,21 @@ export default function Contato() {
   };
 
   return (
-    <Container className={`form-container ${theme}`}>
+    <Container className={`form-container ${theme === 'dark' ? 'dark-theme' : ''}`}>
+      {showAlert && (
+        <Alert variant="success" onClose={() => setShowAlert(false)} dismissible>
+          <Alert.Heading>Informações Cadastradas com Sucesso!</Alert.Heading>
+          <p>
+            <strong>Nome:</strong> {name} <br />
+            <strong>Email:</strong> {email} <br />
+            <strong>Telefone:</strong> {phone} <br />
+            <strong>CEP:</strong> {cep} <br />
+            <strong>Rua:</strong> {street} <br />
+            <strong>Bairro:</strong> {neighborhood} <br />
+            <strong>Cidade:</strong> {city}
+          </p>
+        </Alert>
+      )}
       <p className='title'>Cadastre as suas informações ao nosso sistema!</p>
       <form onSubmit={handleSubmit}>
         <div className="form-row">
