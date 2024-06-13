@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Alert } from 'react-bootstrap';
 import InputMask from 'react-input-mask';
-// import './Contato.css'; // Certifique-se de importar seu arquivo CSS
 
 export default function Contato() {
   const [name, setName] = useState('');
@@ -14,16 +13,13 @@ export default function Contato() {
   const [error, setError] = useState('');
   const [showAlert, setShowAlert] = useState(false);
   const [theme, setTheme] = useState('light');
-
   const handleCepChange = async (e) => {
-    const newCep = e.target.value.replace(/\D/g, ''); // Remove non-numeric characters
+    const newCep = e.target.value.replace(/\D/g, ''); 
     setCep(newCep);
-
     if (newCep.length === 8) {
       try {
         const response = await fetch(`https://viacep.com.br/ws/${newCep}/json/`);
         const data = await response.json();
-
         if (data.erro) {
           setError('CEP não encontrado');
           setStreet('');
@@ -48,22 +44,19 @@ export default function Contato() {
       setError('');
     }
   };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     setShowAlert(true);
   };
-
   const toggleTheme = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
   };
-
   return (
     <Container className={`form-container ${theme === 'dark' ? 'dark-theme' : ''}`}>
       {showAlert && (
         <Alert variant="success" onClose={() => setShowAlert(false)} dismissible>
-          <Alert.Heading>Informações Cadastradas com Sucesso!</Alert.Heading>
-          <p>
+          <Alert.Heading className='title-alert'>Informações Cadastradas com Sucesso!</Alert.Heading>
+          <p className='subject'>
             <strong>Nome:</strong> {name} <br />
             <strong>Email:</strong> {email} <br />
             <strong>Telefone:</strong> {phone} <br />

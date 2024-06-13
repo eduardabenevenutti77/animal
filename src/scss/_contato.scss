@@ -1,11 +1,18 @@
-/* Contato.css */
-
 $form-background: #f9f9f9;
 $primary-color: #619c5f;
 $secondary-color: #20531f;
 $border-radius: 7px;
 $padding: 20px;
-
+strong {
+  color: #4b7e49;
+}
+.title-alert {
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.subject {
+  color: rgb(82, 82, 82);
+}
 .form-container {
   max-width: 950px;
   margin: 40px auto 0;
@@ -16,26 +23,21 @@ $padding: 20px;
   border: 1px solid #ccc;
   transition: box-shadow 0.3s ease;
   margin-bottom: 100px;
-
   &.dark-theme {
     background-color: #d7f1d6;
     color: white;
-
     .form-input, .form-button, .theme-button {
       background-color: #444;
       border-color: #555;
       color: white;
-
       &:hover {
         background-color: #619c5f;
       }
     }
-
     .form-error {
       color: red;
     }
   }
-
   .title {
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
@@ -44,14 +46,12 @@ $padding: 20px;
     margin-bottom: 20px;
   }
 }
-
 .form-label {
   display: block;
   margin-bottom: 8px;
   font-weight: bold;
   color: $secondary-color;
 }
-
 .form-input {
   width: 350px;
   padding: 12px;
@@ -61,17 +61,14 @@ $padding: 20px;
   font-size: 16px;
   outline: none;
   transition: border-color 0.3s ease;
-
   &:focus {
     border-color: $primary-color;
   }
-
   margin: 0 auto;
   display: block;
   margin-left: 15px;
   margin-bottom: 20px; 
 }
-
 .form-button {
   width: 50%;
   padding: 12px;
@@ -84,25 +81,21 @@ $padding: 20px;
   cursor: pointer;
   transition: background-color 0.3s ease;
   margin-left: 250px;
-
   &:hover {
     background-color: darken($primary-color, 10%);
   }
 }
-
 .form-error {
   color: red;
   font-weight: bold;
   text-align: center;
   margin-top: 10px;
 }
-
 .form-row {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .theme-button {
   width: 50%;
   padding: 12px;
@@ -116,7 +109,6 @@ $padding: 20px;
   transition: background-color 0.3s ease;
   margin-top: 20px;
   margin-left: 250px;
-
   &:hover {
     background-color: #bbb;
   }
