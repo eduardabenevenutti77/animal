@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Container } from 'react-bootstrap';
+import InputMask from 'react-input-mask';
 
 export default function Contato() {
   const [name, setName] = useState('');
@@ -13,7 +14,7 @@ export default function Contato() {
   const [theme, setTheme] = useState('light');
 
   const handleCepChange = async (e) => {
-    const newCep = e.target.value;
+    const newCep = e.target.value.replace(/\D/g, ''); // Remove non-numeric characters
     setCep(newCep);
 
     if (newCep.length === 8) {
@@ -79,11 +80,21 @@ export default function Contato() {
         <div className="form-row">
           <label className="form-label">
             Telefone:
-            <input type="text" value={phone} onChange={(e) => setPhone(e.target.value)} className="form-input" />
+            <InputMask 
+              mask="(99) 99999-9999" 
+              value={phone} 
+              onChange={(e) => setPhone(e.target.value)} 
+              className="form-input" 
+            />
           </label>
           <label className="form-label">
             CEP:
-            <input type="text" value={cep} onChange={handleCepChange} className="form-input" />
+            <InputMask 
+              mask="99999-999" 
+              value={cep} 
+              onChange={handleCepChange} 
+              className="form-input" 
+            />
           </label>
         </div>
         {error && <p className="form-error">{error}</p>}
